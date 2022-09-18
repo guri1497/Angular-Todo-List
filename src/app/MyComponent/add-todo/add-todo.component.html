@@ -1,0 +1,17 @@
+<div class="container">
+  <h1 class="text-center mb-2">My Todo List With Angular</h1><h4>Add new Todo.</h4>
+<form class="row g-3" (ngSubmit)="onSubmit()">
+    <div class="col-md-4">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" [(ngModel)]="title" class="form-control" id="title" name="title">
+    </div>
+    <div class="col-md-4">
+      <label for="description" class="form-label">Description</label>
+      <input type="text" [(ngModel)]="description" class="form-control" id="description" name="description">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Add Todo</button>
+    </div>
+  </form>
+  </div>
+  
